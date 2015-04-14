@@ -1,0 +1,8 @@
+#! /bin/bash
+\curl -sSL https://get.rvm.io | bash &&
+rvm install ruby-2.1.5 &&
+rvm use ruby-2.1.5@rails_4.2 --create --default &&
+gem install bundler
+
+#sudo chmod -R 777 /home/.zshrc
+#export PATH=PATH=$PATH:$HOME/.rvm/bin
